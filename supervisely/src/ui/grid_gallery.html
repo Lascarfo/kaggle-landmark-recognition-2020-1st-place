@@ -1,0 +1,13 @@
+<sly-card title="Visualizations"
+          subtitle="Grid gallery for samples"
+          :options="{collapsable: true}"
+          :collapsed.sync="state.collapsed5"
+          :disabled="{disabled: state.disabled5, message: 'complete stage 4'}"
+          ref="step5"
+>
+    <sly-grid-gallery
+            :content="data.Gallery.content"
+            :options="data.Gallery.options"
+            :active-figure="state.activeFigure">
+    </sly-grid-gallery>
+</sly-card>
